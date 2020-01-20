@@ -5,6 +5,6 @@ void AntiFiddler() => HttpWebRequest.DefaultWebProxy = new WebProxy();
 //closing it afterwards like so:
 
 using(WebClient wc = new WebClient()) {
-wc.DownloadString("foo.bar");
+wc.DownloadString("webstring");
 wc.Proxy = null;
 }
